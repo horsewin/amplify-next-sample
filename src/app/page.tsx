@@ -3,7 +3,9 @@ import Image from 'next/image'
 export default async function Page() {
   const data = await getData()
  
-  return <main></main>
+  return <main>
+    <p>{data.formattedDate}</p>
+  </main>
 }
 
 async function getData() {
